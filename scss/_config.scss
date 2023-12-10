@@ -6,3 +6,10 @@ $secondary-color: hsl(0, 0%, 59%);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@mixin flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}

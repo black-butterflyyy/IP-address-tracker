@@ -12,6 +12,7 @@ body {
   color: config.$primary-color;
   line-height: 1.6;
   text-align: center;
+  position: relative;
 }
 
 /* Ip header secition */
@@ -55,14 +56,41 @@ body {
     background-color: config.$primary-color;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include config.flex();
     transition: opacity 0.5s ease;
   }
 
   .input-icon:hover {
     cursor: pointer;
     opacity: 0.9;
+  }
+}
+
+.ip-info-section {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 1rem 0;
+  @include config.flex($direction: column);
+}
+
+.ip-info {
+  margin-bottom: 1.5rem;
+
+  h3 {
+    color: config.$secondary-color;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-weight: 700;
+    color: config.$primary-color;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
   }
 }
