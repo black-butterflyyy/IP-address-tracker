@@ -1,0 +1,8 @@
+﻿$primary-color: hsl(0, 0%, 17%);
+$secondary-color: hsl(0, 0%, 59%);
+
+@mixin backgroundImage($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

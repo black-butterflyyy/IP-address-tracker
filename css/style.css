@@ -1,3 +1,4 @@
+/* General styels*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,5 +7,57 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  color: hsl(0, 0%, 17%);
   line-height: 1.6;
+  text-align: center;
+}
+
+/* Ip header secition */
+.ip-header {
+  background-image: url("../images/pattern-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.ip-header h1 {
+  color: #fff;
+  padding: 1.5rem 0;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.search-ip-address {
+  padding: 0 1.5rem;
+  position: relative;
+}
+.search-ip-address input {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  border: none;
+  outline: 0;
+}
+.search-ip-address input:hover {
+  cursor: pointer;
+}
+.search-ip-address .input-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem;
+  width: 20px;
+  height: 100%;
+  background-color: hsl(0, 0%, 17%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+.search-ip-address .input-icon:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
