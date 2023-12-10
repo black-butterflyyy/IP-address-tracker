@@ -18,7 +18,7 @@ body {
 /* Ip header secition */
 .ip-header {
   @include config.backgroundImage($url: '../images/pattern-bg-mobile.png');
-  height: 50vh;
+  height: 60vh;
 
   h1 {
     color: #fff;
@@ -68,13 +68,14 @@ body {
 
 .ip-info-section {
   position: absolute;
-  top: 70%;
+  top: 22%;
   left: 5%;
   width: 90%;
   border-radius: 15px;
   background-color: #fff;
   padding: 1rem 0;
   @include config.flex($direction: column);
+  z-index: 999;
 }
 
 .ip-info {
@@ -93,4 +94,9 @@ body {
     font-size: 1.3rem;
     margin-top: 0.5rem;
   }
+}
+
+/* Map section */
+#map {
+  height: 100vh;
 }

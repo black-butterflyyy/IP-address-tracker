@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: hsl(0, 0%, 17%);
   line-height: 1.6;
   text-align: center;
@@ -15,10 +15,10 @@ body {
 
 /* Ip header secition */
 .ip-header {
-  background-image: url("../images/pattern-bg-mobile.png");
+  background-image: url('../images/pattern-bg-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
 }
 .ip-header h1 {
   color: #fff;
@@ -66,7 +66,7 @@ body {
 
 .ip-info-section {
   position: absolute;
-  top: 70%;
+  top: 22%;
   left: 5%;
   width: 90%;
   border-radius: 15px;
@@ -76,6 +76,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .ip-info {
@@ -92,4 +93,10 @@ body {
   color: hsl(0, 0%, 17%);
   font-size: 1.3rem;
   margin-top: 0.5rem;
+}
+
+/* Map section */
+#map {
+  height: 100vh;
+  width: 100%;
 }
