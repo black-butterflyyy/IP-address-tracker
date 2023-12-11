@@ -38,14 +38,14 @@
     <header class="ip-header">
       <h1>IP Address Tracker</h1>
       <div class="search-ip-address">
-        <div class="input-icon">
+        <div class="input-icon" id="input-icon">
           <img src="/images/icon-arrow.svg" />
         </div>
         <input
           type="text"
           placeholder=" Search for any IP address or domain "
           name="ip-address"
-          id="ip-address"
+          id="ip-address-input"
         />
       </div>
     </header>
@@ -53,19 +53,19 @@
     <section class="ip-info-section">
       <div class="ip-info">
         <h3>IP Address</h3>
-        <p>192.212.174.101</p>
+        <p id="ip">192.212.174.101</p>
       </div>
       <div class="ip-info">
         <h3>Location</h3>
-        <p>Brooklyn, NY 10001</p>
+        <p id="location">Brooklyn, NY 10001</p>
       </div>
       <div class="ip-info">
         <h3>Timezone</h3>
-        <p>UTC-5:00</p>
+        <p id="timezone">UTC-5:00</p>
       </div>
       <div class="ip-info">
         <h3>ISP</h3>
-        <p>SpaceX Starlink</p>
+        <p id="isp">SpaceX Starlink</p>
       </div>
     </section>
 
