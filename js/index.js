@@ -48,24 +48,16 @@ async function getGeoIpInfo(queryStringParam = '') {
 
 // Check for a valid ip address like 194.71.227.168
 function isValidIpAddress(ipAddress) {
-  if (
-    /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(
-      ipAddress
-    )
-  ) {
-    return true;
-  }
-  return false;
+  return /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(
+    ipAddress
+  );
 }
 
 // Check for a valid domain like amazon.com
 function isValidDomain(domain) {
-  if (
-    /^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})+$/.test(domain)
-  ) {
-    return true;
-  }
-  return false;
+  return /^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9](?:\.[a-zA-Z]{2,})+$/.test(
+    domain
+  );
 }
 
 function updateMap(location) {
