@@ -18,7 +18,7 @@ body {
 /* Ip header secition */
 .ip-header {
   @include config.backgroundImage($url: '../images/pattern-bg-mobile.png');
-  height: 60vh;
+  height: 40vh;
 
   h1 {
     color: #fff;
@@ -40,6 +40,10 @@ body {
     border: none;
     outline: 0;
   }
+  input::placeholder {
+    color: config.$secondary-color;
+    font-weight: 500;
+  }
 
   input:hover {
     cursor: pointer;
@@ -57,7 +61,7 @@ body {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     @include config.flex();
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
   }
 
   .input-icon:hover {
@@ -99,4 +103,50 @@ body {
 /* Map section */
 #map {
   height: 100vh;
+}
+
+// Desktop version
+@media screen and (min-width: 992px) {
+  .ip-header {
+    @include config.backgroundImage($url: '../images/pattern-bg-desktop.png');
+  }
+
+  .search-ip-address {
+    padding: 0 1.5rem;
+    width: 40%;
+    margin: 0 auto;
+
+    input {
+      padding: 1.2rem 1rem;
+    }
+
+    .input-icon {
+      padding: 1.7rem 2rem;
+    }
+  }
+
+  .ip-info-section {
+    padding: 2rem 2rem 4rem 2rem;
+    top: 23%;
+    left: 10%;
+    width: 80%;
+    @include config.flex($direction: row);
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .ip-info {
+    margin-bottom: 0;
+    padding: 0 4rem 0 2rem;
+    border-left: 1px solid #ccc;
+
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+
+    h3 {
+      font-size: 0.9rem;
+    }
+  }
 }
