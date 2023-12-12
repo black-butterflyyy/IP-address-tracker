@@ -79,3 +79,6 @@ function updateDom(info) {
 
 document.addEventListener('DOMContentLoaded', init);
 inputIcon.addEventListener('click', searchIpAddress);
+ipAddressInput.addEventListener('keydown', (e) => {
+  if (e.keyCode === 13) searchIpAddress();
+});
